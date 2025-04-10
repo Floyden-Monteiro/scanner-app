@@ -40,10 +40,15 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\scanner_app.png" BaseSize="512,512" ForegroundScale="0.65" Color="Transparent" />
+
+    <!-- App Icon -->
+    <MauiIcon Include="Resources\AppIcon\scanner_app.png" 
+              ForegroundScale="0.65"
+              Color="#FFFFFF" 
+              BaseSize="512,512" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash_logo.png" Color="#2ED573" BaseSize="512,512" Resize="true" />
+		<MauiSplashScreen Include="Resources\Splash\splash_logo.png" Color="#2ED573"  BaseSize="128,128" Resize="true" />
 
 
 		<!-- Images -->
@@ -57,16 +62,18 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <AndroidResource Remove="Platforms\Android\Resources\values\styles.xml" />
-	</ItemGroup>
+
+
+
 
 	<ItemGroup>
+	    <PackageReference Include="DotNetMeteor.HotReload.Plugin" Version="3.*" />
 		<PackageReference Include="CloudinaryDotNet" Version="1.27.5" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="7.0.1" />
 		<PackageReference Include="CommunityToolkit.Maui.Core" Version="7.0.1" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
-		<PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.7.1" />
+		<PackageReference Include="itext7.bouncy-castle-adapter" Version="9.1.0" />
+		<!-- <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.7.1" /> -->
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
@@ -74,6 +81,17 @@
 		<PackageReference Include="ZXing.Net.Maui" Version="0.4.0" />
 		<PackageReference Include="ZXing.Net.Maui.Controls" Version="0.4.0" />
 	</ItemGroup>
+
+	<ItemGroup>
+	    <PackageReference Include="itext7" Version="9.1.0" />
+	    <PackageReference Include="itext7.commons" Version="8.0.2" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0-android'">
+		<ProjectReference Include="..\EpsonBinding\EpsonBinding.csproj" />
+	</ItemGroup>
+
+
+
 
 
 </Project>

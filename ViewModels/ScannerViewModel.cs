@@ -4,18 +4,24 @@ using ZXing.Net.Maui.Controls;
 using ZXing.Net.Maui;
 using scannermaui.Services.interfaces;
 using scannermaui.Models;
+using CommunityToolkit.Maui.Views;
+using CommunityToolkit.Maui.Alerts;
+using scannermaui.Views;
 
 namespace scannermaui.ViewModels
 {
     public partial class ScannerViewModel : ObservableObject
     {
-        private readonly ICartService _cartService;
         private readonly IApiService _apiService;
+        private readonly ICartService _cartService;
 
-        public ScannerViewModel(ICartService cartService, IApiService apiService)
+        [ObservableProperty]
+        private string _result;
+
+        public ScannerViewModel(IApiService apiService, ICartService cartService)
         {
-            _cartService = cartService;
             _apiService = apiService;
+            _cartService = cartService;
         }
 
         [RelayCommand]
@@ -61,35 +67,57 @@ namespace scannermaui.ViewModels
                 await MainThread.InvokeOnMainThreadAsync(async () =>
                 {
                     await Shell.Current.Navigation.PopAsync();
-
-                    try
-                    {
-                        var response = await _apiService.ScanProductAsync(barcode);
-
-                        if (response.StatusCode == 200)
-                        {
-                            var cartItem = new CartItem
-                            {
-                                ProductName = response.Data.Name,
-                                Price = response.Data.Price,
-                                Quantity = 1
-                            };
-
-                            _cartService.AddToCart(cartItem);
-                            await Shell.Current.GoToAsync("//CartPage");
-                        }
-                        else if (response.StatusCode == 404)
-                        {
-                            await Shell.Current.DisplayAlert("Not Found", "Product not found in database", "OK");
-                            await Shell.Current.GoToAsync("//ScannerPage");
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        await Shell.Current.DisplayAlert("Error", "Failed to scan product", "OK");
-                        await Shell.Current.GoToAsync("//ScannerPage");
-                    }
+                    await BarcodeDetected(barcode);
                 });
+            }
+        }
+
+        [RelayCommand]
+        private async Task BarcodeDetected(string barcode)
+        {
+            try
+            {
+                var response = await _apiService.ScanProductAsync(barcode);
+
+                if (response.StatusCode == 404)
+                {
+                    bool shouldAdd = await Shell.Current.DisplayAlert(
+                        "Product Not Found",
+                        "Would you like to add this product?",
+                        "Yes", "No");
+
+                    if (shouldAdd)
+                    {
+                        var popup = new AddProductPopup();
+                        var viewModel = new AddProductViewModel(_apiService, popup)
+                        {
+                            Barcode = barcode 
+                        };
+                        popup.BindingContext = viewModel;
+
+                        await Shell.Current.CurrentPage.ShowPopupAsync(popup);
+                    }
+                }
+                else if (response.StatusCode == 200 && response.Data != null)
+                {
+                    var cartItem = new CartItem
+                    {
+                        ProductName = response.Data.Name,
+                        Price = response.Data.Price,
+                        Quantity = 1
+                    };
+
+                    _cartService.AddToCart(cartItem);
+                    await Toast.Make($"{response.Data.Name} added to cart").Show();
+                }
+                else
+                {
+                    await Toast.Make(response.Message).Show();
+                }
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error", ex.Message, "OK");
             }
         }
     }

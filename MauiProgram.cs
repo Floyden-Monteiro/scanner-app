@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using scannermaui.Services;
 using scannermaui.Services.interfaces;
+using DotNet.Meteor.HotReload.Plugin;
 using scannermaui.ViewModels;
 using scannermaui.Views;
 using ZXing.Net.Maui.Controls;
@@ -49,6 +50,7 @@ namespace scannermaui
 
 #if DEBUG
             builder.Logging.AddDebug();
+            builder.EnableHotReload();
 #endif
 
             var app = builder.Build();

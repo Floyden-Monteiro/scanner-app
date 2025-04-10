@@ -83,7 +83,7 @@ namespace scannermaui.ViewModels
             {
                 bool confirm = await Shell.Current.DisplayAlert(
                     "Confirm",
-                    $"Do you want to remove {item.ProductName}?",
+                    $"Do you want to remove HotReload {item.ProductName}?",
                     "Yes",
                     "No");
 
@@ -114,6 +114,26 @@ namespace scannermaui.ViewModels
         }
 
         [RelayCommand]
+        private async Task ShareInvoice()
+        {
+            if (CartItems == null || !CartItems.Any())
+            {
+                await Shell.Current.DisplayAlert("Error", "Cart is empty", "OK");
+                return;
+            }
+
+            try
+            {
+                await _printService.HandleInvoice(CartItems.ToList(), TotalAmount, true);
+                // await Toast.Make("Invoice shared successfully").Show();
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error", $"Failed to share: {ex.Message}", "OK");
+            }
+        }
+
+        [RelayCommand]
         private async Task PrintInvoice()
         {
             if (CartItems == null || !CartItems.Any())
@@ -124,8 +144,8 @@ namespace scannermaui.ViewModels
 
             try
             {
-                await _printService.PrintInvoice(CartItems.ToList(), TotalAmount);
-                await Toast.Make("Invoice printed successfully").Show();
+                await _printService.HandleInvoice(CartItems.ToList(), TotalAmount, false);
+                await Toast.Make("Invoice sent to printer").Show();
             }
             catch (Exception ex)
             {

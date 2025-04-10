@@ -10,7 +10,7 @@ namespace scannermaui.Services
     public class ApiService : IApiService
     {
         private readonly HttpClient _httpClient;
-        //private const string BaseUrl = "http://10.197.201.111:5254";
+        // private const string BaseUrl = "http://10.197.201.137:5254";
         private const string BaseUrl = "http://10.0.2.2:5254";
 
         private readonly Cloudinary _cloudinary;
@@ -24,9 +24,10 @@ namespace scannermaui.Services
 
             var cloudinarySettings = new CloudinarySettings
             {
-                CloudName = "dgqk0obsd",
-                ApiKey = "919811813622361",
-                ApiSecret = "ZeMx0gu9XM04yU8a5lhuJRxd8mk"
+                CloudName = "Cloud-Name",
+                ApiKey = "API-KEY",
+                ApiSecret = "API-SECRET"
+
             };
 
             var account = new Account(

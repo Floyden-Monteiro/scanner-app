@@ -151,22 +151,44 @@
         </Frame>
 
 
-        <Button Grid.Row="3"
-                Text="Generate Invoice"
-                FontSize="16"
-                TextColor="White"
-                BackgroundColor="#4361EE"
-                CornerRadius="8"
-                HeightRequest="50"
-                Margin="0,0,0,10"
-                Command="{Binding PrintInvoiceCommand}">
-            <Button.Shadow>
-                <Shadow Brush="#4361EE"
-                        Offset="0,2"
-                        Radius="4"
-                        Opacity="0.5"/>
-            </Button.Shadow>
-        </Button>
 
+        <StackLayout Grid.Row="3"
+             Orientation="Horizontal" 
+             Spacing="10" 
+             Margin="0,0,0,10"
+             HorizontalOptions="Fill">
+
+            <Button Text="Print Invoice"
+            FontSize="16"
+            TextColor="White"
+            BackgroundColor="#4361EE"
+            CornerRadius="8"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"
+            Command="{Binding PrintInvoiceCommand}">
+                <Button.Shadow>
+                    <Shadow Brush="#4361EE"
+                    Offset="0,2"
+                    Radius="4"
+                    Opacity="0.5"/>
+                </Button.Shadow>
+            </Button>
+
+            <Button Text="Share Invoice"
+            FontSize="16"
+            TextColor="White"
+            BackgroundColor="#6A11CB"
+            CornerRadius="8"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"
+            Command="{Binding ShareInvoiceCommand}">
+                <Button.Shadow>
+                    <Shadow Brush="#6A11CB"
+                    Offset="0,2"
+                    Radius="4"
+                    Opacity="0.5"/>
+                </Button.Shadow>
+            </Button>
+        </StackLayout>
     </Grid>
 </ContentPage>
