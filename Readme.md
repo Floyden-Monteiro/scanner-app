@@ -22,27 +22,55 @@ A .NET MAUI-based scanner application that allows users to scan barcodes, manage
 - Active internet connection
 - Cloudinary account (for image uploads)
 
+## App Screenshots
+
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <img src="images/image1.png" alt="Scanner" width="200"/><br/>
+      <b>Scanner</b>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/image2.png" alt="Products" width="200"/><br/>
+      <b>Products</b>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/image3.png" alt="Cart" width="200"/><br/>
+      <b>Cart</b>
+    </td>
+    <td align="center" width="25%">
+      <img src="images/image.png" alt="Details" width="200"/><br/>
+      <b>Details</b>
+    </td>
+  </tr>
+</table>
+
 ## Project Setup
 
 1. **Install Required Workloads**:
+
 ```powershell
 dotnet workload install maui
 ```
 
 2. **Clone the Repository**:
+
 ```powershell
 git clone <repository-url>
 cd scannermaui
 ```
 
 3. **Restore Dependencies**:
+
 ```powershell
 dotnet restore
 ```
 
 4. **Configure Epson ePOS SDK**:
+
 - Download Epson ePOS SDK for Android
 - Add the following to your Android Manifest:
+
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -50,7 +78,9 @@ dotnet restore
 ```
 
 5. **Configure Cloudinary**:
+
 - Create a `appsettings.json` file in the project root:
+
 ```json
 {
   "Cloudinary": {
@@ -64,26 +94,31 @@ dotnet restore
 ## Printer Setup
 
 1. **Network Configuration**:
+
 - Ensure your Epson TM-m30III printer is connected to the same network as your device
 - Configure printer's static IP address through printer settings
 
 2. **Printer Testing**:
+
 - Use the Epson TM Utility to test printer connectivity
 - Verify printer is discoverable on the network
 
 ## Building and Running
 
 1. **Debug Build**:
+
 ```powershell
 dotnet build
 ```
 
 2. **Release Build**:
+
 ```powershell
 dotnet publish -c Release
 ```
 
 3. **Run on Android**:
+
 ```powershell
 dotnet build -t:Run -f net8.0-android
 ```
@@ -98,52 +133,36 @@ dotnet build -t:Run -f net8.0-android
 
 ## Key Components
 
-1. **PrintService**: 
+1. **PrintService**:
+
 - Handles thermal printer discovery and printing
 - Supports PDF generation and sharing
 
-2. **CartService**: 
+2. **CartService**:
+
 - Manages shopping cart functionality
 - Handles cart persistence
 
-3. **ApiService**: 
+3. **ApiService**:
+
 - Manages product API communication
 - Handles image uploads to Cloudinary
 
-4. **SearchViewModel**: 
+4. **SearchViewModel**:
+
 - Product search and management
 - Cart integration
 
 ## Troubleshooting
 
 1. **Printer Connection Issues**:
+
 - Verify printer and device are on same network
 - Check printer IP address is correct
 - Ensure printer is powered on and ready
 
 2. **Build Issues**:
+
 - Clean solution: `dotnet clean`
 - Delete bin and obj folders
 - Restore NuGet packages: `dotnet restore`
-
-
-## App Screenshots
-
-<div style="display: flex; justify-content: space-between; margin: 20px 0;">
-    <div style="text-align: center; flex: 1;">
-        <img src="images/image1.png" alt="Scanner" width="200"/>
-        <p>Scanner Interface</p>
-    </div>
-    <div style="text-align: center; flex: 1;">
-        <img src="images/image2.png" alt="Products" width="200"/>
-        <p>Product Management</p>
-    </div>
-    <div style="text-align: center; flex: 1;">
-        <img src="images/image3.png" alt="Cart" width="200"/>
-        <p>Shopping Cart</p>
-    </div>
-    <div style="text-align: center; flex: 1;">
-        <img src="images/image.png" alt="Details" width="200"/>
-        <p>Product Details</p>
-    </div>
-</div>
