@@ -1,0 +1,30 @@
+﻿<metadata>
+
+	<remove-node path="/api/package[@name='com.epson.epos2.printer']/class[@name='LogoKeyCode']" />
+	<remove-node path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@type='com.epson.epos2.printer.LogoKeyCode']" />
+	<remove-node path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/method/parameter[@type='com.epson.epos2.printer.LogoKeyCode']" />
+	<remove-node path="/api/package[@name='com.epson.epos2.printer']/class[@name='LFCPrinter']/field[@type='com.epson.epos2.printer.LogoKeyCode']" />
+	<remove-node path="/api/package[@name='com.epson.epos2.printer']/class[@name='LFCPrinter']/method/parameter[@type='com.epson.epos2.printer.LogoKeyCode']" />
+
+
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='TM_M30']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='MODEL_ANK']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='PARAM_DEFAULT']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='ALIGN_CENTER']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='CUT_FEED']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/method[@name='release']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/method[@name='connect']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/method[@name='disconnect']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/method[@name='addTextAlign']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/method[@name='addText']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/method[@name='addCut']" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/method[@name='sendData']" name="visibility">public</attr>
+
+
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='TM_M30']" name="managedName">TM_M30</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='MODEL_ANK']" name="managedName">MODEL_ANK</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='PARAM_DEFAULT']" name="managedName">PARAM_DEFAULT</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='ALIGN_CENTER']" name="managedName">ALIGN_CENTER</attr>
+	<attr path="/api/package[@name='com.epson.epos2.printer']/class[@name='Printer']/field[@name='CUT_FEED']" name="managedName">CUT_FEED</attr>
+</metadata>

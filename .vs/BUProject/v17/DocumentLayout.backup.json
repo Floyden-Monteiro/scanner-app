@@ -1,0 +1,132 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFEB5A6-9414-07BD-5B81-42CAFB7923E7}|ScannerApp.Tests\\ScannerApp.Tests.csproj|c:\\users\\fmont\\desktop\\bu-project\\scannerapp.tests\\services\\cartservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFEB5A6-9414-07BD-5B81-42CAFB7923E7}|ScannerApp.Tests\\ScannerApp.Tests.csproj|solutionrelative:scannerapp.tests\\services\\cartservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFEB5A6-9414-07BD-5B81-42CAFB7923E7}|ScannerApp.Tests\\ScannerApp.Tests.csproj|c:\\users\\fmont\\desktop\\bu-project\\scannerapp.tests\\services\\authservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFEB5A6-9414-07BD-5B81-42CAFB7923E7}|ScannerApp.Tests\\ScannerApp.Tests.csproj|solutionrelative:scannerapp.tests\\services\\authservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFEB5A6-9414-07BD-5B81-42CAFB7923E7}|ScannerApp.Tests\\ScannerApp.Tests.csproj|c:\\users\\fmont\\desktop\\bu-project\\scannerapp.tests\\services\\apiservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFEB5A6-9414-07BD-5B81-42CAFB7923E7}|ScannerApp.Tests\\ScannerApp.Tests.csproj|solutionrelative:scannerapp.tests\\services\\apiservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAFEB5A6-9414-07BD-5B81-42CAFB7923E7}|ScannerApp.Tests\\ScannerApp.Tests.csproj|c:\\users\\fmont\\desktop\\bu-project\\scannerapp.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAFEB5A6-9414-07BD-5B81-42CAFB7923E7}|ScannerApp.Tests\\ScannerApp.Tests.csproj|solutionrelative:scannerapp.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBD8C18-CC14-4438-9677-5D54D64B1BA8}|ScannerMaui\\ScannerMaui.csproj|c:\\users\\fmont\\desktop\\bu-project\\scannermaui\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FBD8C18-CC14-4438-9677-5D54D64B1BA8}|ScannerMaui\\ScannerMaui.csproj|solutionrelative:scannermaui\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBD8C18-CC14-4438-9677-5D54D64B1BA8}|ScannerMaui\\ScannerMaui.csproj|c:\\users\\fmont\\desktop\\bu-project\\scannermaui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FBD8C18-CC14-4438-9677-5D54D64B1BA8}|ScannerMaui\\ScannerMaui.csproj|solutionrelative:scannermaui\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FBD8C18-CC14-4438-9677-5D54D64B1BA8}|ScannerMaui\\ScannerMaui.csproj|c:\\users\\fmont\\desktop\\bu-project\\scannermaui\\scannermaui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{9FBD8C18-CC14-4438-9677-5D54D64B1BA8}|ScannerMaui\\ScannerMaui.csproj|solutionrelative:scannermaui\\scannermaui.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 176,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CartServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerApp.Tests\\Services\\CartServiceTests.cs",
+              "RelativeDocumentMoniker": "ScannerApp.Tests\\Services\\CartServiceTests.cs",
+              "ToolTip": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerApp.Tests\\Services\\CartServiceTests.cs",
+              "RelativeToolTip": "ScannerApp.Tests\\Services\\CartServiceTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T06:53:34.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiServiceTests.cs",
+              "DocumentMoniker": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerApp.Tests\\Services\\ApiServiceTests.cs",
+              "RelativeDocumentMoniker": "ScannerApp.Tests\\Services\\ApiServiceTests.cs",
+              "ToolTip": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerApp.Tests\\Services\\ApiServiceTests.cs",
+              "RelativeToolTip": "ScannerApp.Tests\\Services\\ApiServiceTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:24:30.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerApp.Tests\\Services\\AuthServiceTest.cs",
+              "RelativeDocumentMoniker": "ScannerApp.Tests\\Services\\AuthServiceTest.cs",
+              "ToolTip": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerApp.Tests\\Services\\AuthServiceTest.cs",
+              "RelativeToolTip": "ScannerApp.Tests\\Services\\AuthServiceTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:24:18.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerApp.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "ScannerApp.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerApp.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "ScannerApp.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:20:11.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\scannermaui\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "scannermaui\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\scannermaui\\Services\\ApiService.cs",
+              "RelativeToolTip": "scannermaui\\Services\\ApiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:17:55.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\scannermaui\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "scannermaui\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\scannermaui\\MauiProgram.cs",
+              "RelativeToolTip": "scannermaui\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:15:46.688Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ScannerMaui",
+              "DocumentMoniker": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerMaui\\ScannerMaui.csproj",
+              "RelativeDocumentMoniker": "ScannerMaui\\ScannerMaui.csproj",
+              "ToolTip": "C:\\Users\\fmont\\Desktop\\BU-PROJECT\\ScannerMaui\\ScannerMaui.csproj",
+              "RelativeToolTip": "ScannerMaui\\ScannerMaui.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-12T11:46:15.708Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
